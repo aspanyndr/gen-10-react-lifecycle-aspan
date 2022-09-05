@@ -1,11 +1,12 @@
 import logo from './logo.svg';
-import LifeCycleClass from './LifeCycleClass'
+// import LifeCycleClass from './LifeCycleClass'
+import LifeCycleFunction from './LifeCycleFunction';
 
 
 function App() {
   return (
     <div>
-      <LifeCycleClass />
+      <LifeCycleFunction />
     </div>
   );
 }
