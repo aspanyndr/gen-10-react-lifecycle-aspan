@@ -33,11 +33,6 @@ export default function LifeCycleFunction() {
     setDataKeranjang(keranjangSekarang)
   }
 
-  function hapusSemuaData(produknya) {
-    const keranjangSekarang = [...dataKeranjang]
-    keranjangSekarang.length = 0
-    setDataKeranjang(keranjangSekarang)
-  }
 
   useEffect(() => {
     setDataBelanjaan(dataAPi)
@@ -67,7 +62,7 @@ export default function LifeCycleFunction() {
           </button>
         </li>)}
     </ul>
-    
+
 
     <p>Daftar Keranjang</p>
 
@@ -81,11 +76,9 @@ export default function LifeCycleFunction() {
           </button>
 
         </li>
-        
+
       )}
-            <button onClick={() => hapusSemuaData(dataKeranjang)}>
-        Bersihkan Keranjang
-      </button>
+
 
     </ul>
   </>
